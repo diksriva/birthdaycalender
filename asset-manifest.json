@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/birthdayCalender/static/css/main.9d435acf.css",
+    "main.js": "/birthdayCalender/static/js/main.f9d9ed00.js",
+    "static/js/787.3f0a290d.chunk.js": "/birthdayCalender/static/js/787.3f0a290d.chunk.js",
+    "index.html": "/birthdayCalender/index.html",
+    "main.9d435acf.css.map": "/birthdayCalender/static/css/main.9d435acf.css.map",
+    "main.f9d9ed00.js.map": "/birthdayCalender/static/js/main.f9d9ed00.js.map",
+    "787.3f0a290d.chunk.js.map": "/birthdayCalender/static/js/787.3f0a290d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d435acf.css",
+    "static/js/main.f9d9ed00.js"
+  ]
+}
