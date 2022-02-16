@@ -108,23 +108,21 @@ function App() {
     const fri = []
     const sat = []
     const sun = []
-    // console.log('data', data)
-    // const data = JSON.parse(data);
+    
 
     for (let i = 0; i < data.length; i++) {
-      // var date = new Date(data[i].birthday.substring(6, 10))
+      
       let dateobj = new Date(data[i].birthday)
-      // console.log(new Date(data[i].birthday))
+      
       let date = dateobj.getDate()
       let month = dateobj.getMonth() + 1
       let changeyear = new Date(month + "/" + date + "/" + showyear)
-      // console.log("changeyear", changeyear)
+      
       const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
       var day = weekday[changeyear.getDay()]
-      // console.log('data[i].name', data[i])
+      
       let initials = data[i].name.split(' ').reduce((acc, subname) =>
         acc + subname[0], '')
-      // console.log(initials)
       if (data[i].birthday.trim() !== "" && data[i].name.trim() !== "") {
         if (day === "Monday") {
           mon.push({ dateobj, initials })
@@ -150,13 +148,13 @@ function App() {
       }
     }
     setWeekdays({
-      Mon: mon.sort((a, b) => (a.dateobj < b.dateobj) ? 1 : -1),
-      Tue: tue.sort((a, b) => (a.dateobj < b.dateobj) ? 1 : -1),
-      Wed: wed.sort((a, b) => (a.dateobj < b.dateobj) ? 1 : -1),
-      Thus: thus.sort((a, b) => (a.dateobj < b.dateobj) ? 1 : -1),
-      Fri: fri.sort((a, b) => (a.dateobj < b.dateobj) ? 1 : -1),
-      Sat: sat.sort((a, b) => (a.dateobj < b.dateobj) ? 1 : -1),
-      Sun: sun.sort((a, b) => (a.dateobj < b.dateobj) ? 1 : -1)
+      Mon: mon.sort((a, b) => (a.dateobj <= b.dateobj) ? 1 : -1),
+      Tue: tue.sort((a, b) => (a.dateobj <= b.dateobj) ? 1 : -1),
+      Wed: wed.sort((a, b) => (a.dateobj <= b.dateobj) ? 1 : -1),
+      Thus: thus.sort((a, b) => (a.dateobj <= b.dateobj) ? 1 : -1),
+      Fri: fri.sort((a, b) => (a.dateobj <= b.dateobj) ? 1 : -1),
+      Sat: sat.sort((a, b) => (a.dateobj <= b.dateobj) ? 1 : -1),
+      Sun: sun.sort((a, b) => (a.dateobj <= b.dateobj) ? 1 : -1)
     })
   }
 
