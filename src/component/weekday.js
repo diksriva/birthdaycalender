@@ -13,7 +13,7 @@ const WeekdayComponent = (props) => {
                     return (
                         <div>
                             <div key={index} className='day'>{weekday}</div>
-                            <div className='initails-wrapper' style={{ height: "100px", width: "100px", gridTemplateColumns: `repeat(${a}, 1fr)`  }}>
+                            <div className='initails-wrapper' style={{ height: "100px", width: "100px",border:"0px", gridTemplateColumns: `repeat(${a}, 1fr)`  }}>
                                 {props.weekData[weekday] && props.weekData[weekday].map((person) => {
                                     return <div style={{ height: cal + "px", width: cal + "px"}}>{person.initials}</div>
                                 })}
