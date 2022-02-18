@@ -121,7 +121,7 @@ function App() {
       const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
       var day = weekday[changeyear.getDay()]
       
-      let initials = data[i].name.split(' ').reduce((acc, subname) =>
+      let initials = data[i].name.trim().split(' ').reduce((acc, subname) =>
         acc + subname[0], '')
       if (data[i].birthday.trim() !== "" && data[i].name.trim() !== "") {
         if (day === "Monday") {

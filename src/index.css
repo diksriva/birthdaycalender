@@ -1,17 +1,3 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-/*
-    _____________       ___________ _________              _________      ______
-    ___  __ )__(_)________  /___  /_______  /_____ _____  ___  ____/_____ ___  /
-    __  __  |_  /__  ___/  __/_  __ \  __  /_  __ `/_  / / /  /    _  __ `/_  /
-    _  /_/ /_  / _  /   / /_ _  / / / /_/ / / /_/ /_  /_/ // /___  / /_/ /_  /
-    /_____/ /_/  /_/    \__/ /_/ /_/\__,_/  \__,_/ _\__, / \____/  \__,_/ /_/
-*/
-
-/* ==========================================================================
-   Base styles
-   ========================================================================== */
-
    html,
    button,
    input,
@@ -52,9 +38,7 @@
    }
    
    
-   /* ==========================================================================
-         Helper classes
-         ========================================================================== */
+   
    
    .clearfix:before,
    .clearfix:after {
@@ -95,9 +79,7 @@
    }
    
    
-   /* ==========================================================================
-         Task intro page styles
-         ========================================================================== */
+  
    
    .faq,
    .app {
@@ -167,24 +149,17 @@
      text-align: center;
    }
    
-   /* ==========================================================================
-         FAQ specific styles
-         ========================================================================== */
+
    
    .faq__question {
      margin-bottom: 0;
    }
    
-   /* ==========================================================================
-         Work Area styles
-         ========================================================================== */
+ 
    
    .calendar-container {
    
-     /*
-             Temporary Styles
-             Please replace these when you start working on the task
-          */
+    
      background: #fff;
      border: 2px dashed rgba(0, 0, 0, .2);
      border-radius: 3px;
@@ -229,18 +204,18 @@
    .container {
      display: grid;
      grid-template-columns: repeat(7, 120px);
-     gap: 16px;
+     gap: 10px;
      padding: 10px;
     text-align: right;
    }
    
    .day{
-     background-color:#8238f8;
+     background-color:#787654;
      padding:7px;
      color: #eaf0f2;  
-       border-top: 1px solid #8238f8 ;
-       border-right: 1px solid #8238f8;
-       border-left: 1px solid #8238f8;
+       border-top: 1px solid #787654;
+       border-right: 1px solid #787654;
+       border-left: 1px solid #787654;
       border-top-right-radius: 3px; 
       border-top-left-radius: 3px;
    }
@@ -267,34 +242,30 @@
    
    .initails-wrapper>div{
     display:flex;
-     color: #eaf0f2;
+     color: #000000;
      align-items: center;
      justify-content: center;
    
    }
    
    .initails-wrapper>div:nth-child(5n+0) {
-     background:#a0d201;
+     background:#467859;
    }
    .initails-wrapper>div:nth-child(5n+1) {
-     background: #e64a33;
+     background: #653782;
    }
    .initails-wrapper>div:nth-child(5n+2) {
-     background:#434758;
+     background:#333333;
    }
    .initails-wrapper>div:nth-child(5n+3) {
-     background:#c87d99;
+     background:#347869;
    }
    .initails-wrapper>div:nth-child(5n+4) {
-     background: lightskyblue
+     background: #986754;
    }
    
    *{
      box-sizing: border-box;
    }
    
-   /* #a0d201 */
-   /* #e64a33 */
-   /* #555d7a */
-   /* #c87d99 */
-   /* #c67c97 */
+ 
